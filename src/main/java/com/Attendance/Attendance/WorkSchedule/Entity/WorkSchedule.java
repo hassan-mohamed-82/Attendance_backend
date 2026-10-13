@@ -3,6 +3,7 @@ package com.Attendance.Attendance.WorkSchedule.Entity;
 
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +13,7 @@ import java.time.LocalTime;
 @Table(name = "work_schedules")
 @Getter
 @Setter
+@Builder
 public class WorkSchedule {
 
     @Id
