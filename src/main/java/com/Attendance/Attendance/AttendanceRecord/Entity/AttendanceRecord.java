@@ -4,12 +4,11 @@ package com.Attendance.Attendance.AttendanceRecord.Entity;
 import com.Attendance.Attendance.User.Entity.User;
 import com.Attendance.Attendance.common.AttendanceStatus;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.Instant;
 import java.time.LocalDate;
-
+@Builder
 @Entity
 @Table(
         name = "attendance_records",
@@ -28,6 +27,8 @@ import java.time.LocalDate;
 )
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class AttendanceRecord {
 
     @Id
